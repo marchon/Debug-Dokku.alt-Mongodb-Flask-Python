@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>Simple ToDo Example</title>
+	<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+        {% for item in d %} 
+           {{ item }} = {{d[item]}} 
+        {% endfor %} 
+
+	<h1>Simple MongoDB ToDo List</h1>
+	{% block body %}{% endblock %}
+</body>
+</html>

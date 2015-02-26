@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<h2> NSN: {{ task._id    }}</h2>
+<strong>Record 1: {{ ("{%s}"%task["00_FLSFOI-01"][1:-1])   }}</strong>
+<hr>
+<strong>Record 2: {{ task["00_FLSFOI-02"]   }}</strong>
+<hr>
+<strong>Record 3  {{ task["00_FLSFOI-03"]   }}</strong>
+<hr>
+<strong>Record 4: {{ task["00_FLSFOI-04"]   }}</strong>
+<hr>
+<strong>Record 5: {{ task["00_FLSFOI-05"]   }}</strong>
+<hr>
+<strong>Record 9: {{ task["00_FLSFOI-09"]   }}</strong>
+<hr>
+<p>{{ task.text }}</p>
+{% endblock %}
